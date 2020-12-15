@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tetris.View.GameEnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris"
+        mc:Ignorable="d"
+        Title="GameEnd" Height="200" Width="300" MinHeight="180" MinWidth="280"
+        Background="AliceBlue">
+    <Grid Width="auto">
+        <TextBlock Margin="0,10,0,0" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="20"  VerticalAlignment="Top" Name="Text_Block" Foreground="Blue" />
+        <Button Click="Button_Click_Close" Content="Close" Foreground="Yellow" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="Pink"/>
+        <Button Click="Button_Click_Restart" Content="Restart" Foreground="Yellow" HorizontalAlignment="Right" Margin="0,90,20,0" VerticalAlignment="Top" Width="70" Height="40" Background="Pink"/>
+        <Button Click="Button_Click_Results" Content="Results" Foreground="Yellow" HorizontalAlignment="Center" Margin="5,90,5,0" VerticalAlignment="Top" Width="70" Height="40" Background="Pink"/>
+
+    </Grid>
+</Window>

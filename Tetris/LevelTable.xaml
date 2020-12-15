@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tetris.LevelTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris"
+        mc:Ignorable="d"
+        Title="LevelTable" Height="250" Width="250">
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" x:Name="tasksGrid" Margin="0,0,9.6,0" Background="AliceBlue">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Level}" Header="Level" Width="110"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
